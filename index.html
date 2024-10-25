@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Резюмэ</title>
+    <link rel="stylesheet" href=".//my.css" />
+  </head>
+
+  <body>
+    <h1 class="fn">Аброр</h1>
+    <h2 class="fn">Саидов</h2>
+    <a href="https://instagram.com/abror_saidov">Instagram</a>
+
+    <img src="./photo_2024-07-12_23-07-06.jpg" alt="Узбек" id="myphoto" />
+    <p>
+      ---------------------------------------------------------------------------------
+    </p>
+
+    <h1 class="kk">Опыт работы:</h1>
+    <ul>
+      <li>SAP System Operation 2020-2024</li>
+      <li>Video editing and Motion designer 2016-2020 G.S studio</li>
+    </ul>
+    <h2 class="kk">Мои навыки:</h2>
+    <ul>
+      <li>SAP logistic specialist</li>
+      <li>Photoshop mid level</li>
+      <li>Da vinci Resolve mid level</li>
+    </ul>
+    <h3 class="kk">Языки:</h3>
+    <ul>
+      <li>Чешский B2</li>
+      <li>Английский B2</li>
+    </ul>
+
+    <h2>Калькулятор</h2>
+    <div>
+      <label>
+        a =
+        <input type="number" name="x" />
+      </label>
+    </div>
+    <div>
+      <label>
+        b =
+        <input type="number" name="y" />
+      </label>
+    </div>
+    <div class="operators">
+      <button onclick="sum()">+</button>
+      <button onclick="min()">-</button>
+      <button onclick="mul()">*</button>
+      <button onclick="del()">/</button>
+    </div>
+    <span id="calcResult">Результат:</span>
+
+    <script src="./script.js"></script>
+    <h1>Поле для ввода</h1>
+    <label>
+      Возраст:
+      <input type="number" name="age" />
+    </label>
+    <div class="coursePrice">
+      <h1>Калькулятор стоимости курса</h1>
+      <label>
+        Курс:
+        <select name=" " id="courseName" onchange="coursePrice()">
+            <option value="none">Выберите курс</option>
+          <option value="Python">Python</option>
+          <option value="Front">Frontend</option>
+          <option value="UX">UX/UI</option>
+        </select>
+      </label>
+      <label>
+        Скидка:
+        <input
+          id="step"
+          type="range"
+          value="0"
+          oninput="coursePrice()"
+          min="0"
+          max="50"
+          step="5"
+        />
+        <span id="sale">0%</span>
+      </label>
+      <label>
+        Сумма:
+        <input type="text" readonly class="price"/>
+      </label>
+    
+
+
+
+
+    </div>
+  </body>
+</html>

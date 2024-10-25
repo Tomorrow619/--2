@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="" content="" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="updateCountryCode">
+      <h1>Оставить заявку</h1>
+      <label>
+        Имя:
+        <input type="text" placeholder="Введите свое Имя" />
+      </label>
+      <label>
+        Страна:
+        <select id="country" onchange="updatecountryCode()">
+          <option value="ru">Россия</option>
+          <option value="uz">Узбекистан</option>
+          <option value="cz">Чехия</option>
+          <option value="jp">Япония</option>
+          <option value="usa">США</option>
+        </select>
+      </label>
+      <label>
+        Телефон:
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Введите номер телефона"
+          oninput="updatecountryCode()"
+        />
+      </label>
+      <input type="checkbox" class="name" />
+      <span>Подтвердить обработку данных</span>
+      <div>
+        <button>Отправить</button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

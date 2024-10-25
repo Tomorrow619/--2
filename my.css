@@ -1,0 +1,43 @@
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#myphoto {
+    width: 280px;
+    display: block;
+}
+.fn {
+    color: rgb(125, 4, 239);
+    text-shadow: 12cm;
+    text-transform: uppercase;
+    text-align: center;
+}
+.kk {
+    color: darkslateblue;
+}
+.coursePrice{
+    width: 600px;
+margin: 0 auto;
+padding: 30px;
+background-color: rgb(235, 13, 13);
+border-radius: 20px;
+
+}
+.coursePrice label{
+    display: block;
+    margin-bottom: 10px;
+}
+@media (max-width:1200px) {
+    body{
+        background-color:brown;
+    }
+}
+@media(max-width:900px){
+    *{
+      color:beige  
+    }
+    .fio{
+        color:white;
+    }
+}
